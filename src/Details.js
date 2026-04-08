@@ -3,7 +3,7 @@
 import logogradient from "./assets/logo.svg";
 import logo from "./assets/logo2.svg";
 // Profile Image
-import profile from "./assets/profile.jpg";
+import profile from "./assets/profile.png";
 // Tech stack images
 import html from "./assets/techstack/html.png";
 import css from "./assets/techstack/css.png";
@@ -19,6 +19,7 @@ import git from "./assets/techstack/git.png";
 import npm from "./assets/techstack/npm.png";
 import postman from "./assets/techstack/postman.png";
 import figma from "./assets/techstack/figma.png";
+import flutter from "./assets/techstack/flutter.png";
 // Porject Images
 import projectImage1 from "./assets/projects/project1.jpg";
 import projectImage2 from "./assets/projects/project2.jpg";
@@ -26,6 +27,7 @@ import projectImage3 from "./assets/projects/project3.jpg";
 import projectImage4 from "./assets/projects/project4.jpg";
 import projectImage5 from "./assets/projects/project5.jpg";
 import projectImage6 from "./assets/projects/project6.jpg";
+
 
 // Logos
 export const logos = {
@@ -35,18 +37,23 @@ export const logos = {
 
 // Enter your Personal Details here
 export const personalDetails = {
-  name: "Pavan MG",
-  tagline: "I build things for web",
+  name: "Michael SH",
+  tagline: "I build modern web and mobile applications",
   img: profile,
-  about: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
-};
+about: `Saya adalah seorang Junior Frontend Developer yang berfokus pada pengembangan tampilan web modern, responsif, dan user-friendly menggunakan React dan Tailwind CSS.
+
+Saya memiliki pengalaman dalam merancang antarmuka pengguna (UI) menggunakan Figma serta mengimplementasikannya ke dalam aplikasi web.
+
+Saya juga memiliki pengalaman dalam membangun solusi berbasis Machine Learning menggunakan Convolutional Neural Network (CNN) dengan TensorFlow dan Keras, serta mengintegrasikannya ke dalam aplikasi web menggunakan Flask.
+
+Selain itu, saya memiliki pengalaman dalam pengembangan aplikasi mobile menggunakan Flutter. Saat ini, saya sedang memperdalam kemampuan sebagai Full Stack Developer melalui bootcamp dan aktif membangun berbagai proyek untuk meningkatkan keterampilan saya.`,};
 
 // Enter your Social Media URLs here
 export const socialMediaUrl = {
-  linkdein: "https://www.linkedin.com/",
-  github: "https://www.github.com/",
+  linkedin:"https://linkedin.com/in/michael-stefanus-hardyan",
+  github: "https://github.com/michaelsh-dev",
   twitter: "https://twitter.com/",
-  instagram: "https://www.instagram.com/",
+  instagram: "https://instagram.com/micxenn",
 };
 
 // Enter your Work Experience here
@@ -77,12 +84,13 @@ export const workDetails = [
 // Enter your Education Details here
 export const eduDetails = [
   {
-    Position: "Frontend Development",
-    Company: "Udemy, YouTube, Google, Medium",
-    Location: "Online",
-    Type: "Full Time",
-    Duration: "Jan 2022 - Present",
+    Position: "S1 Informatika",
+    Company: "Universitas Bunda Mulia",
+    Location: "Jakarta, Indonesia",
+    Type: "IPK 3.46/4.00",
+    Duration: "2022 - 2026",
   },
+  /*
   {
     Position: "Bachelor in Electronics & Communication",
     Company: `Your College Name here`,
@@ -90,6 +98,7 @@ export const eduDetails = [
     Type: "Full Time",
     Duration: "Aug 2020 - Present",
   },
+*/
 ];
 
 // Tech Stack and Tools
@@ -108,6 +117,7 @@ export const techStackDetails = {
   git: git,
   github: github,
   figma: figma,
+  flutter: flutter,
 };
 
 // Enter your Project Details here
@@ -170,6 +180,6 @@ project lorem ipsum generator for dummy content`,
 
 // Enter your Contact Details here
 export const contactDetails = {
-  email: "hi@example.com",
-  phone: "+91 12345 67890",
+  email: "mstefanus090@gmail.com",
+  phone: "+6281291817837",
 };
