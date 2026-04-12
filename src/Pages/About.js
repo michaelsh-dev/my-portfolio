@@ -3,6 +3,7 @@ import Work from "../Components/Work";
 import { personalDetails, eduDetails } from "../Details";
 import { getWhatIDo } from "../services/api";
 import { FaCode, FaServer, FaBrain, FaMobileAlt } from "react-icons/fa";
+import { FaDatabase, FaPaintBrush } from "react-icons/fa";
 
 function About() {
   const [whatIDo, setWhatIDo] = useState([]);
@@ -21,18 +22,20 @@ function About() {
   }, []);
 
   const iconMap = {
-    "Frontend Development": <FaCode />,
-    "Backend Integration": <FaServer />,
-    "Machine Learning": <FaBrain />,
-    "Mobile Development": <FaMobileAlt />,
+    code: <FaCode />,
+    server: <FaServer />,
+    brain: <FaBrain />,
+    mobile: <FaMobileAlt />,
+    database: <FaDatabase />,
+    design: <FaPaintBrush />,
   };
 
   return (
     <main className="container mx-auto max-width pt-28 md:pt-32 pb-20">
-      {/* About Me */}
+
       <section className="mb-20">
         <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
-          About Me
+          Tentang Saya
         </h1>
 
         <p className="text-content text-base md:text-lg py-8 lg:max-w-2xl leading-relaxed whitespace-pre-line">
@@ -40,10 +43,9 @@ function About() {
         </p>
       </section>
 
-      {/* What I Do */}
       <section className="pt-4 md:pt-6">
         <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl font-bold">
-          What I Do
+          Keahlian Saya
         </h1>
 
         <div className="grid md:grid-cols-2 gap-6 mt-8">
@@ -53,24 +55,24 @@ function About() {
               className="p-6 rounded-2xl bg-dark-card shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-purple-500/20"
             >
               <div className="text-purple-500 text-3xl mb-4">
-                {iconMap[item.title]}
+                {iconMap[item.icon] || <FaCode />}
               </div>
 
               <h2 className="text-xl font-semibold mb-2 text-light-heading">
                 {item.title}
               </h2>
 
-              <p className="text-content text-base md:text-lg py-8 lg:max-w-2xl leading-relaxed whitespace-pre-line">                {item.description}
+              <p className="text-content text-base md:text-lg mt-2 leading-relaxed whitespace-pre-line flex-grow">
+                {item.description}
               </p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Education */}
       <section className="pt-16">
         <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
-          Education
+            Pendidikan
         </h1>
 
         {React.Children.toArray(

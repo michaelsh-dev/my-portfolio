@@ -85,12 +85,12 @@ function Header() {
         <ul className="font-medium md:flex items-center md:space-x-3 md:mr-10">
           <li className="pb-2 md:pb-0">
             <button className={navItemClass("home")} onClick={() => scrollToSection("home")}>
-              Home
+              Beranda
             </button>
           </li>
           <li className="pb-2 md:pb-0">
             <button className={navItemClass("about")} onClick={() => scrollToSection("about")}>
-              About
+              Tentang
             </button>
           </li>
           <li className="pb-2 md:pb-0">
@@ -98,7 +98,7 @@ function Header() {
               className={navItemClass("technologies")}
               onClick={() => scrollToSection("technologies")}
             >
-              Technologies
+              Teknologi
             </button>
           </li>
           <li className="pb-2 md:pb-0">
@@ -106,12 +106,12 @@ function Header() {
               className={navItemClass("projects")}
               onClick={() => scrollToSection("projects")}
             >
-              Projects
+              Proyek
             </button>
           </li>
           <li>
             <button className={navItemClass("contact")} onClick={() => scrollToSection("contact")}>
-              Contact
+              kontak
             </button>
           </li>
         </ul>

@@ -22,21 +22,20 @@ function Projects() {
     <main className="container mx-auto max-width pt-10 mb-20">
       <section>
         <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
-          Projects
+          Proyek
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10">
-          {Array.isArray(projects) &&
-            projects.map((project) => (
-              <Project
-                key={project.id}
-                title={project.title}
-                image={project.image}
-                description={project.description}
-                techstack={project.techstack}
-                previewLink={project.previewLink}
-                githubLink={project.githubLink}
-              />))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">          {Array.isArray(projects) &&
+          projects.map((project) => (
+            <Project
+              key={project.id}
+              title={project.title}
+              image={project.image}
+              description={project.description}
+              techstack={project.techstack}
+              previewLink={project.previewLink}
+              githubLink={project.githubLink}
+            />))}
         </div>
       </section>
     </main>

@@ -1,55 +1,46 @@
-# React Developer Portfolio template
-#### Live Demo https://react-portfolio-v1.netlify.app/
-#### Figma Design https://www.figma.com/community/file/1116246660507537002
-### Preview ( Dark Mode )
+# My Portfolio
 
-<img src="/preview.gif" alt="preview" width="600px" />
+Portfolio pribadi berbasis React untuk menampilkan profil, skill, dan project yang pernah saya kerjakan.
 
-## Follow Below instructions to add your deatils in the portfolio.
+## Tentang Project
 
-### Change and customize every section according to your need, All you need to do is edit `/src/Details.js`
+Website ini dibuat untuk menampilkan informasi tentang saya sebagai developer, termasuk:
 
-#### Open `/src/Details.js` & modify it as per your need.
+* profil singkat
+* teknologi yang saya gunakan
+* daftar project
+* kontak
 
-```javascript
-/ Enter your Personal Details here
-export const personalDetails = {
-  name: "Pavan MG",
-  tagline: "I build things for web",
-  img: profile,
-  about: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-  when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
-};
+## Tech Stack
 
-// Enter your Social Media URLs here
-export const socialMediaUrl = {
-  linkdein: "https://www.linkedin.com/",
-  github: "https://www.github.com/",
-  twitter: "https://twitter.com/",
-  instagram: "https://www.instagram.com/",
-};
+* React.js
+* JavaScript
+* Tailwind CSS
+* MockAPI
 
-// Enter your Work Experience here
-export const workDetails = [
-  {
-    Position: "Frontend Web Developer",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
-    Type: "Full Time",
-    Duration: "Sep 2021 - Dec 2021",
-  }
-];
+## Fitur
 
-// Enter your Education Details here
-export const eduDetails = { ... };
+* Tampilan portfolio modern dan responsif
+* Menampilkan project dari API
+* Section About, Technologies, Projects, dan Contact
 
-// Tech Stack and Tools
-export const techStackDetails = { ... };
+## Menjalankan Project
 
-// Enter your Project Details here
-export const projectDetails = [ ... ];
-
-// Enter your Contact Details here
-export const contactDetails = { ... };
+```bash
+npm install
+npm start
 ```
+
+## Preview
+
+![Portfolio Preview](./preview.png)
+
+## Contact
+
+* Email: [mstefanus090@gmail.com](mailto:mstefanus090@gmail.com)
+* GitHub: https://github.com/michaelsh-dev
+* LinkedIn: https://linkedin.com/in/michael-stefanus-hardyan
+
+## Catatan
+
+Project ini akan terus diperbarui seiring bertambahnya pengalaman dan hasil belajar saya.

@@ -1,18 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Project({ title, image, description, techstack, previewLink, githubLink }) {
+  const [showImage, setShowImage] = useState(Boolean(image && image.trim() !== ""));
+
   return (
-    <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-300 dark:shadow-slate-900">
-      <img src={image} alt="" loading="lazy" />
-      <div className="dark:bg-dark-card p-4">
-        <h1 className="dark:text-light-heading font-semibold text-lg pt-1">{title}</h1>
-        <p className="text-content pt-4 font-light">{description}</p>
+    <article className="rounded-xl mt-10 overflow-hidden bg-dark-card shadow-md">
+      {showImage && (
+        <img
+          src={image}
+          alt={title}
+          loading="lazy"
+          className="w-full h-56 object-cover object-center"
+          onError={() => setShowImage(false)}
+        />
+      )}
+
+      <div className="p-4">
+        <h1 className="dark:text-light-heading font-semibold text-lg pt-1">
+          {title}
+        </h1>
+
+        <p className="text-content pt-4 font-light">
+          {description}
+        </p>
+
         <h3 className="text-dark-heading dark:text-light-heading font-medium pt-4">
           Tech Stack : <span className="font-light">{techstack}</span>
         </h3>
-        <div className="flex justify-between items-center mt-5">
 
-          {/* Preview */}
+        <div className="flex justify-between items-center mt-5">
           {previewLink && (
             <div className="flex items-center gap-2">
               <svg
@@ -48,7 +64,6 @@ function Project({ title, image, description, techstack, previewLink, githubLink
             </div>
           )}
 
-          {/* GitHub */}
           {githubLink && (
             <div className="flex items-center gap-2">
               <svg
@@ -76,7 +91,6 @@ function Project({ title, image, description, techstack, previewLink, githubLink
               </a>
             </div>
           )}
-
         </div>
       </div>
     </article>

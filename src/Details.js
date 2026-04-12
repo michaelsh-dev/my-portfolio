@@ -20,6 +20,9 @@ import npm from "./assets/techstack/npm.png";
 import postman from "./assets/techstack/postman.png";
 import figma from "./assets/techstack/figma.png";
 import flutter from "./assets/techstack/flutter.png";
+import mysql from "./assets/techstack/mysql.png";
+import php from "./assets/techstack/php.png";
+
 // Porject Images
 import projectImage1 from "./assets/projects/project1.jpg";
 import projectImage2 from "./assets/projects/project2.jpg";
@@ -37,8 +40,8 @@ export const logos = {
 
 // Enter your Personal Details here
 export const personalDetails = {
-  name: "Michael SH",
-  tagline: "I build modern web and mobile applications",
+  name: "Michael Stefanus Hardyan",
+  tagline: "Full Stack Web Developer yang membangun aplikasi web dan mobile modern dan responsif",
   img: profile,
 about: `Saya adalah seorang Junior Frontend Developer yang berfokus pada pengembangan tampilan web modern, responsif, dan user-friendly menggunakan React dan Tailwind CSS.
 
@@ -118,6 +121,8 @@ export const techStackDetails = {
   github: github,
   figma: figma,
   flutter: flutter,
+  mysql: mysql,
+  php: php,
 };
 
 // Enter your Project Details here
@@ -181,5 +186,5 @@ project lorem ipsum generator for dummy content`,
 // Enter your Contact Details here
 export const contactDetails = {
   email: "mstefanus090@gmail.com",
-  phone: "+6281291817837",
+  linkedin: "https://linkedin.com/in/michael-stefanus-hardyan",
 };
