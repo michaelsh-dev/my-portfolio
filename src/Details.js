@@ -43,13 +43,11 @@ export const personalDetails = {
   name: "Michael Stefanus Hardyan",
   tagline: "Full Stack Web Developer yang membangun aplikasi web dan mobile modern dan responsif",
   img: profile,
-about: `Saya adalah seorang Junior Frontend Developer yang berfokus pada pengembangan tampilan web modern, responsif, dan user-friendly menggunakan React dan Tailwind CSS.
+about: `Saya adalah seorang Full Stack Developer yang mengembangkan aplikasi web dan mobile secara end-to-end.
 
-Saya memiliki pengalaman dalam merancang antarmuka pengguna (UI) menggunakan Figma serta mengimplementasikannya ke dalam aplikasi web.
+Saya berpengalaman menggunakan React, Tailwind CSS, dan Flutter untuk membangun aplikasi yang modern, responsif, dan user-friendly. Selain itu, saya juga memiliki pengalaman dalam mengembangkan solusi Machine Learning menggunakan CNN dengan TensorFlow dan Keras.
 
-Saya juga memiliki pengalaman dalam membangun solusi berbasis Machine Learning menggunakan Convolutional Neural Network (CNN) dengan TensorFlow dan Keras, serta mengintegrasikannya ke dalam aplikasi web menggunakan Flask.
-
-Selain itu, saya memiliki pengalaman dalam pengembangan aplikasi mobile menggunakan Flutter. Saat ini, saya sedang memperdalam kemampuan sebagai Full Stack Developer melalui bootcamp dan aktif membangun berbagai proyek untuk meningkatkan keterampilan saya.`,};
+Saya memahami dasar penggunaan Figma dan mampu mengimplementasikan desain UI/UX ke dalam aplikasi sesuai kebutuhan proyek. Saat ini, saya terus mengembangkan kemampuan melalui berbagai proyek yang saya kerjakan.`,};
 
 // Enter your Social Media URLs here
 export const socialMediaUrl = {

@@ -12,10 +12,15 @@ function Header() {
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
-    if (section) {
-      const headerOffset = 88;
-      const elementPosition = section.getBoundingClientRect().top + window.pageYOffset;
-      const offsetPosition = elementPosition - headerOffset;
+    const header = document.querySelector("header");
+
+    if (section && header) {
+      const headerHeight = header.offsetHeight;
+
+      const elementPosition =
+        section.getBoundingClientRect().top + window.pageYOffset;
+
+      const offsetPosition = elementPosition - headerHeight - 0; // -10 biar agak lega dikit
 
       window.scrollTo({
         top: offsetPosition,
@@ -31,18 +36,18 @@ function Header() {
     const sections = document.querySelectorAll("section[id]");
 
     const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
-        }
-      });
-    },
-    {
-      rootMargin: "-120px 0px -55% 0px",
-      threshold: 0.1,
-    }
-  );
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        rootMargin: "-120px 0px -45% 0px",
+        threshold: 0.05,
+      }
+    );
 
     sections.forEach((section) => observer.observe(section));
 
@@ -58,8 +63,8 @@ function Header() {
     }`;
 
   return (
-    <header className="container mx-auto md:flex justify-between items-center py-4 max-width sticky top-0 z-50 bg-white dark:bg-dark-mode">
-      <div className="flex justify-between items-center h-[60px]">
+    <header className="container mx-auto md:flex justify-between items-center py-2 md:py-4 max-width sticky top-0 z-50 bg-white dark:bg-dark-mode">
+      <div className="flex justify-between items-center h-[40px] md:h-[40px] relative z-50">      
         <div className="w-14"></div>
 
         <div onClick={toggleClass} className="cursor-pointer md:hidden">
@@ -80,8 +85,19 @@ function Header() {
           </svg>
         </div>
       </div>
-
-      <nav className={`${!isOpen ? "hidden" : "block"} text-center md:flex justify-between`}>
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black/40 z-30 md:hidden"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+      <nav
+        className={`${isOpen ? "flex" : "hidden"} flex-col items-center justify-center
+    fixed top-0 left-0 w-full h-[55vh]
+    bg-white dark:bg-dark-mode
+    z-40
+    md:static md:flex md:flex-row md:h-auto md:w-auto md:bg-transparent
+  `}>
         <ul className="font-medium md:flex items-center md:space-x-3 md:mr-10">
           <li className="pb-2 md:pb-0">
             <button className={navItemClass("home")} onClick={() => scrollToSection("home")}>
@@ -116,7 +132,7 @@ function Header() {
           </li>
         </ul>
 
-        <ul className="flex justify-evenly items-center my-5 md:my-0 md:space-x-5 md:mr-5">
+        <ul className="flex justify-center gap-4 my-6 md:my-0 md:gap-0 md:space-x-5 md:mr-5">
           <li>
             <a
               href={instagram}

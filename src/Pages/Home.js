@@ -96,13 +96,13 @@ function Home() {
         </h2>
       </div>
 
-      <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-        <img
-          ref={myimageref}
-          className="w-2/3 md:w-1/2 rounded-full"
-          src={img}
-          alt={name}
-        />
+      <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0">        
+      <img
+        ref={myimageref}
+        className="w-2/3 md:w-1/2 rounded-full"
+        src={img}
+        alt={name}
+      />
       </div>
     </main>
   );
